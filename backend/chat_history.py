@@ -1,7 +1,7 @@
 from typing import List, Optional
 from uuid import UUID
-from backend.supabase_client import get_scoped_client
-from backend.models import Chat, Message
+from .supabase_client import get_scoped_client
+from .models import Chat, Message
 
 def get_user_chats(user_id: str, token: str) -> List[Chat]:
     supabase = get_scoped_client(token)

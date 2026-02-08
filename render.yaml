@@ -5,12 +5,12 @@ services:
   # Backend - FastAPI Python Service
   - type: web
     name: lumina-rag-backend
-    env: python
+    runtime: python
     region: oregon
     plan: free
     rootDir: backend
     buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    startCommand: python -m uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: GEMINI_API_KEY
         sync: false # You'll set this manually
@@ -24,7 +24,7 @@ services:
   # Frontend - Next.js Node Service
   - type: web
     name: lumina-rag-frontend
-    env: node
+    runtime: node
     region: oregon
     plan: free
     rootDir: frontend
@@ -36,7 +36,4 @@ services:
       - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
         sync: false
       - key: NEXT_PUBLIC_API_URL
-        fromService:
-          name: lumina-rag-backend
-          type: web
-          property: host
+        sync: false
