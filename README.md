@@ -9,8 +9,10 @@ A production-ready Retrieval-Augmented Generation (RAG) application built for th
 
 ## 🎯 Live Demo
 
-- **Frontend:** [https://lumina-rag.vercel.app](https://lumina-rag.vercel.app)
-- **Backend API:** [https://lumina-rag-api.railway.app](https://lumina-rag-api.railway.app)
+> **Deployed on Railway** (both frontend and backend)
+
+- **Frontend:** `https://lumina-rag-frontend.up.railway.app` _(update after deployment)_
+- **Backend API:** `https://lumina-rag-backend.up.railway.app` _(update after deployment)_
 
 ---
 
