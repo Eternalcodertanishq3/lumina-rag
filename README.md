@@ -9,10 +9,10 @@ A production-ready Retrieval-Augmented Generation (RAG) application built for th
 
 ## 🎯 Live Demo
 
-> **Deployed on Railway** (both frontend and backend)
+> **Deployed on Render** (both frontend and backend)
 
-- **Frontend:** `https://lumina-rag-frontend.up.railway.app` _(update after deployment)_
-- **Backend API:** `https://lumina-rag-backend.up.railway.app` _(update after deployment)_
+- **Frontend:** `https://lumina-rag-frontend.onrender.com` _(update after deployment)_
+- **Backend API:** `https://lumina-rag-backend.onrender.com` _(update after deployment)_
 
 ---
 
