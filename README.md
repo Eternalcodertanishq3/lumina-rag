@@ -11,8 +11,8 @@ A production-ready Retrieval-Augmented Generation (RAG) application built for th
 
 > **Deployed on Render** (both frontend and backend)
 
-- **Frontend:** `https://lumina-rag-frontend.onrender.com` _(update after deployment)_
-- **Backend API:** `https://lumina-rag-backend.onrender.com` _(update after deployment)_
+- **Frontend:** [https://lumina-rag-frontend.onrender.com](https://lumina-rag-frontend.onrender.com)
+- **Backend API:** [https://lumina-rag-backend.onrender.com](https://lumina-rag-backend.onrender.com)
 
 ---
 
