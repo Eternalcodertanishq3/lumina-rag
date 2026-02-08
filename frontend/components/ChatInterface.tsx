@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Send, FileText, Clock, Zap } from "lucide-react";
+import { Send, FileText, Activity, Zap } from "lucide-react";
 import { createClient } from "@/lib/supabase";
 import { motion, AnimatePresence } from "framer-motion";
 import LuminaAvatar from "./LuminaAvatar";
@@ -212,7 +212,7 @@ export default function ChatInterface({ chatId, onUpdateChat }: ChatInterfacePro
                         {/* Timing Badge */}
                         {msg.timing && (
                           <span className="text-[10px] bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 px-2.5 py-1 rounded-full flex items-center gap-1.5">
-                            <Clock size={10} />
+                            <Activity size={10} />
                             {formatTime(msg.timing)}
                           </span>
                         )}
@@ -293,7 +293,7 @@ export default function ChatInterface({ chatId, onUpdateChat }: ChatInterfacePro
               <>
                 <span className="text-[10px] text-gray-700">•</span>
                 <span className="text-[10px] text-emerald-500 flex items-center gap-1">
-                  <Clock size={10} />
+                  <Activity size={10} />
                   Last: {formatTime(lastResponseTime)}
                 </span>
               </>
