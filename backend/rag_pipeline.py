@@ -1,6 +1,6 @@
-from .gemini_service import get_embedding, generate_response
-from .supabase_client import get_supabase_client, get_scoped_client
-from .utils import recursive_character_text_splitter
+from backend.gemini_service import get_embedding, generate_response
+from backend.supabase_client import get_supabase_client, get_scoped_client
+from backend.utils import recursive_character_text_splitter
 from flashrank import Ranker, RerankRequest
 import os
 import time

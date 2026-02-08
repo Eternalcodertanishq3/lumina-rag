@@ -4,13 +4,13 @@ from pydantic import BaseModel
 import os
 from pathlib import Path
 from dotenv import load_dotenv
-from .rag_pipeline import ingest_document, answer_query_rag
-from .file_processor import process_file
-from .auth import get_current_user
-from .chat_history import (
+from backend.rag_pipeline import ingest_document, answer_query_rag
+from backend.file_processor import process_file
+from backend.auth import get_current_user
+from backend.chat_history import (
     create_chat, get_user_chats, get_chat_messages, save_message, delete_chat
 )
-from .models import Chat, Message, ChatCreate
+from backend.models import Chat, Message, ChatCreate
 
 env_path = Path(__file__).parent / '.env'
 load_dotenv(dotenv_path=env_path)
@@ -130,7 +130,7 @@ async def delete_chat_route(chat_id: str, user: dict = Depends(get_current_user)
     return {"message": "Chat deleted"}
 
 # --- Scraper Endpoint ---
-from .scraper import scrape_url
+from backend.scraper import scrape_url
 
 @app.post("/ingest/url")
 async def ingest_url_route(

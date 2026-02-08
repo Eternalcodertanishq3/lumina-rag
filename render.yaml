@@ -2,18 +2,18 @@
 # See: https://render.com/docs/blueprint-spec
 
 services:
-  # Backend - FastAPI Python Service
+  # Backend - FastAPI Python Service (runs from repo root)
   - type: web
     name: lumina-rag-backend
     runtime: python
     region: oregon
     plan: free
-    rootDir: backend
-    buildCommand: pip install -r requirements.txt
-    startCommand: python -m uvicorn main:app --host 0.0.0.0 --port $PORT
+    # NO rootDir - deploy from repo root so 'backend' package is available
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: GEMINI_API_KEY
-        sync: false # You'll set this manually
+        sync: false
       - key: SUPABASE_URL
         sync: false
       - key: SUPABASE_KEY
