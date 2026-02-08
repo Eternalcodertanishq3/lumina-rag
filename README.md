@@ -301,10 +301,10 @@ curl -X POST http://localhost:8000/chat \
 
 ## 👤 Author
 
-**[Your Name]**  
-📧 your.email@example.com  
-🔗 [LinkedIn](https://linkedin.com/in/yourprofile)  
-📄 [Resume](https://your-resume-link.com)
+**Tanishq Mangal**  
+📧 tanishkmangal3@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/tanishq-mangal-7a2683254/)  
+🌐 [Portfolio](https://tanishq-creates.netlify.app/)
 
 ---
 
